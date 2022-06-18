@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Hub Meal Calculator</title>
+    <script src="HubMeal2.js"></script>
+    <link rel="stylesheet" href="HubMeal.css">
+</style>
+   
+
+<body onload="start();">
+
+    <div id="wrapper">
+        <button id="info" onclick="openGuide();">Guide</button>
+
+      
+
+        <h1>The Hub Meal Calculator</h1>
+        <p>Welcome to the Hub Meal Calculator!</p>
+        <form action="#">
+            <p>
+                <b>Number of people in household:</b>
+                <input type="text" id="numPeople" name="numPeople" size="10" maxlength="2">
+            </p>
+        </form>
+
+        <button class="btn" id="subNumberPeople" onclick="noPeople();">Submit</button>
+        <div id="names"></div>
+        <div id="noWeeks"></div>
+
+        <div id="tblCosts"></div>
+
+
+
+        <br>
+        <br>
+
+
+        <div id="tblOutput">
+            <table id="outputTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Spent</th>
+                    <th>Meal Costs</th>
+                    <th>Amount</th>
+                    <th>Owes/Owed</th>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <button class="btn" id="restart();" onclick="start();">Restart</button>
+    </div>
+</body>
+
+</html>

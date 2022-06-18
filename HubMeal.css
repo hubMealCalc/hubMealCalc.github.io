@@ -1,0 +1,161 @@
+* {
+  font-family: Merriweather Sans, -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", Helvetica, sans-serif;
+  color: #113a5b;
+  background-color: #113a5b;
+}
+
+td,
+th {
+  border: solid black 1px;
+  padding: 10px;
+  color: black;
+  font-size: 100%;
+  overflow: hidden;
+}
+
+table {
+  table-layout: auto;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  width: 100%;
+}
+
+.owes {
+  color: red;
+}
+
+.owed {
+  color: green;
+}
+
+.people {
+  width: 32%;
+}
+
+#wrapper {
+  align-content: center;
+  padding: 2%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: white;
+}
+
+#wrapper #info {
+  float: left;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#logo {
+  height: 10vh;
+}
+
+h1 {
+  background-color: white;
+  display: inline;
+}
+
+p,
+input,
+b,
+#tblCosts,
+table,
+h2,
+#noWeeks,
+td,
+th,
+#names,
+#tblOutput,
+span {
+  background-color: white;
+}
+
+.btn {
+  background-color: #113a5b;
+  border: none;
+  border-radius: 30px;
+  color: yellow;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+select {
+  background-color: white;
+}
+
+option {
+  background-color: white;
+}
+
+#myModal {
+  color: white;
+}
+
+#close {
+  color: white;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ol {
+  background-color: white;
+}
+
+li {
+  background-color: white;
+  text-align: left;
+}
+
+h3 {
+  background-color: white;
+  text-align: left;
+}
