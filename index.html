@@ -11,6 +11,31 @@
 <body onload="start();">
 
     <div id="wrapper">
+         <button id="info" onclick="openGuide();">Guide</button>
+
+         <!-- The Modal -->
+         <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <button id="close" class="close" onclick="closeModal();">&times;</button>
+              <h2>A Guide to Hub Meal Calculator</h2>
+              <p>Creator: Olivia Mallon (contact: oliviamallon2020@gmail.com)</p>
+              <p>This is a calculator to help calculate shared meal costs among housemates.</p>
+              <h3>Step by Step Guide</h3>
+              <ol type="1">
+                <li> Enter in the number of housemates you have</li>
+                <li> You will then be prompted to enter in the names of all your housemates</li>
+                <li> Enter in the number of weeks you would like to calculate</li>
+                <li> There will be x number of tables generated (x being the number of weeks you want to calculate)</li>
+                <li> Fill in the table, with the cost of each meal, chef (the person who cooked the meal), select all present (if all your housemates were at the meal), present: which housemates were at the meal. </li>
+                <li> Once all the information is filled in, click the "Submit" button and a table will appear with costs</li>
+                <li> OWED - meals this person is owed money by other people, OWES - this person owes people money</li>
+              </ol>
+             
+            </div>
+          
+          </div>
         <h1>The Hub Meal Calculator</h1>
         <p>Welcome to the Hub Meal Calculator!</p>
         <form action="#">
