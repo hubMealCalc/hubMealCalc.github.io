@@ -324,10 +324,10 @@ function selectAll(week, day) {
     }
   }
 
-  updatePeople(day, week);
+  updatePeople(week, day);
 }
 
-function updatePeople(presDay, week) {
+function updatePeople(week, presDay) {
   var identify = "w" + week + "present" + presDay;
   var identify2 = "w" + week + "people" + presDay;
 
