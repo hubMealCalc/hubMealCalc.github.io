@@ -408,7 +408,9 @@ function foodCosts() {
     //per day
     for (x = 0; x < 4; x++) {
       var day = "w" + (y + 1) + "cost" + (x + 1);
-      var dayCost = parseFloat(document.getElementById(day).value);
+      var dayCost = document.getElementById(day).value;
+      console.log(dayCost);
+      console.log(parseFloat(dayCost));
       var costs = "w" + (y + 1) + "people" + (x + 1);
       var peoplePresent = parseFloat(document.getElementById(costs).innerHTML);
 
@@ -488,10 +490,12 @@ function generateTableOutput() {
 
     // how much the person has spent
     cell1 = row.insertCell(1);
+    console.log('SPENT: ' + usersCosts[y]);
     cell1.innerHTML = "£" + usersCosts[y].toFixed(2);
 
     // how much the person's meals they have eaten have costed
     cell1 = row.insertCell(2);
+    console.log('MEAL COST: ' + usersCosts[y]);
     cell1.innerHTML = "£" + usersMeals[y].toFixed(2);
 
     cell1 = row.insertCell(3);
@@ -501,12 +505,13 @@ function generateTableOutput() {
 
     // calculates if the users owes or is owed
     var usersMoney = usersCosts[y] - usersMeals[y];
+    console.log('Money: ' + usersMoney);
 
     if (usersMoney < 0) {
-      cell1.innerHTML = "£" + Math.abs(usersMoney).toFixed(2);
+      cell1.innerHTML = "£" + usersMoney.toFixed(2);
       cell2.innerHTML = '<span class="owes"> OWES</span>';
     } else if (usersMoney > 0) {
-      cell1.innerHTML = "£" + Math.abs(usersMoney).toFixed(2);
+      cell1.innerHTML = "£" + usersMoney.toFixed(2);
       cell2.innerHTML = '<span class="owed"> OWED</span>';
     } else if (usersMoney == 0) {
       cell1.innerHTML = "£" + 0;
