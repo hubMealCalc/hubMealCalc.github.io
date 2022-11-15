@@ -508,10 +508,10 @@ function generateTableOutput() {
     console.log('Money: ' + usersMoney);
 
     if (usersMoney < 0) {
-      cell1.innerHTML = "£" + usersMoney.toFixed(2);
+      cell1.innerHTML = "£" + Math.abs(usersMoney).toFixed(2);
       cell2.innerHTML = '<span class="owes"> OWES</span>';
     } else if (usersMoney > 0) {
-      cell1.innerHTML = "£" + usersMoney.toFixed(2);
+      cell1.innerHTML = "£" + Math.abs(usersMoney).toFixed(2);
       cell2.innerHTML = '<span class="owed"> OWED</span>';
     } else if (usersMoney == 0) {
       cell1.innerHTML = "£" + 0;
